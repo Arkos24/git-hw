@@ -1,0 +1,29 @@
+[tool.poetry]
+name = "telegram-sports-bot"
+version = "0.1.0"
+description = "Telegram bot for sports predictions with baseline models and bankroll strategies"
+authors = ["You <you@example.com>"]
+readme = "README.md"
+packages = [{ include = "bot" }]
+
+[tool.poetry.dependencies]
+python = ">=3.10,<3.13"
+python-dotenv = "^1.0.1"
+aiogram = "^3.13.1"
+SQLAlchemy = "^2.0.35"
+alembic = "^1.13.3"
+pydantic = "^2.9.2"
+httpx = "^0.27.2"
+numpy = "^2.1.1"
+pandas = "^2.2.3"
+scikit-learn = "^1.5.2"
+
+[tool.poetry.group.dev.dependencies]
+ruff = "^0.6.9"
+black = "^24.8.0"
+ipykernel = "^6.29.5"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
